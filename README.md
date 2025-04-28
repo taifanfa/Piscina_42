@@ -66,6 +66,10 @@ Gostaria de expressar minha gratidão a:
 
 Você pode clonar este repositório para estudar os exercícios ou testar localmente:
 
+## Licença 📜
+
+Este projeto está licenciado sob os termos da [Licença MIT](./LICENSE).
+
 ```bash
 git clone https://github.com/seu-usuario/Piscina_42.git
 cd Piscina_42/C00  # ou qualquer outra pasta
