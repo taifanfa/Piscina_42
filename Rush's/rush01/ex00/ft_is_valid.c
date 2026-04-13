@@ -1,29 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_clear_board.c                                   :+:      :+:    :+:   */
+/*   ft_is_valid.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tmfanfa <tmfanfa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/12 21:36:48 by tmfanfa           #+#    #+#             */
-/*   Updated: 2026/04/12 21:38:10 by tmfanfa          ###   ########.fr       */
+/*   Created: 2026/04/12 21:49:09 by tmfanfa           #+#    #+#             */
+/*   Updated: 2026/04/12 21:51:00 by tmfanfa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_clear_board(int board[4][4])
+int	ft_is_valid(int board[4][4], int row, int col, int num)
 {
-	int	i;
-	int	j;
+	int i;
 
 	i = 0;
 	while (i < 4)
 	{
-		j = 0;
-		while (j < 4)
-		{
-			board[i][j] = 0;
-			j++;
-		}
+		if (board[row][i] == num) // ja na linha
+			return (0);
+		if (board[i][col] == num) // já na coluna
+			return (0);
 		i++;
 	}
+	return (1);
 }
